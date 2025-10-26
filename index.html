@@ -10,6 +10,16 @@
 
     <div class="header">
 
+        <audio id="bg-music" src="/audio/Snake Eater.mp3" autoplay loop muted></audio>
+
+        <script>
+            document.addEventListener('click', () => {
+            const audio = document.getElementById('bg-music');
+            audio.muted = false;
+            audio.play();
+            });
+        </script>
+
         <img class="title_img" src="/images/big_boss.png" alt="UNE BELLE IMAGE DE BIG BOSS">
 
         <h1 class="title"> 
@@ -28,7 +38,7 @@
         </ul>
     </div>
 
-    <div class="banderole">
+    <div class="bande">
         <img class="banderole" src="/images/big_boss.png" alt="">
         <img src="/images/the_boss.jpg" alt="" class="banderole">
         <img src="/images/raiden.png" alt="" class="banderole">
@@ -46,10 +56,6 @@
         <img src="/images/raiden.png" alt="" class="banderole">
         <img class="banderole" src="/images/big_boss.png" alt="">
         <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
     </div>
 
     <section class="raiden" id="raiden">
@@ -94,9 +100,6 @@
         </p>
     </section>
 
-    <audio src="/audio/Snake Eater.mp3" autoplay>
-        Votre navigateur ne supporte pas l'élément <code>audio</code>.
-    </audio>
 
 </body>
 </html>
