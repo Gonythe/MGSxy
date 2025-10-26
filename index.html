@@ -39,22 +39,30 @@
     </div>
 
     <div class="bande">
+        <button class="btn show-overlay">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>
+        <img src="/images/the_boss.jpg" alt="" class="banderole">
+        <img src="/images/raiden.png" alt="" class="banderole">
+        <button class="btn show-overlay">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>        <img src="/images/raiden.png" alt="" class="banderole">
         <img class="banderole" src="/images/big_boss.png" alt="">
         <img src="/images/the_boss.jpg" alt="" class="banderole">
         <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
+        <button class="btn show-overlay">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>
         <img src="/images/the_boss.jpg" alt="" class="banderole">
         <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
+        <button class="btn show-overlay">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>
         <img src="/images/the_boss.jpg" alt="" class="banderole">
         <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
+        <button class="btn show-overlay">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>
         <img src="/images/the_boss.jpg" alt="" class="banderole">
     </div>
 
@@ -99,6 +107,29 @@
             (Ce site a été réalisé avec l'aide de chatgpt pour les descriptions car j'ai grave pas d'inspi (mais tout le code j'ai fait tout seul comme un grand garçon bien obéissant)) 
         </p>
     </section>
+
+    <section class="big_boss_call">
+        <img id="overlay" class="overlay" src="/images/big_boss_call.png" alt="">
+    </section>
+
+    <script>
+        const buttons = document.querySelectorAll('.show-overlay');
+        const overlay = document.getElementById('overlay');
+
+        // Afficher / cacher avec les boutons
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+            overlay.classList.toggle('visible');
+            });
+        });
+
+        // Fermer avec Échap
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') {
+            overlay.classList.remove('visible');
+            }
+        });
+    </script>
 
 
 </body>
