@@ -27,12 +27,14 @@ body {
     justify-content: space-around;
 }
 
-.elmt {
+.categorie ul a{
     background-color: blue;
     font-size: 25px;
+    color: wheat;
+    text-decoration: none;
 }
 
-.elmt:hover {
+.liste li a:hover {
     background-color: rgb(226, 73, 167);
     font-size: 125px;
 }
