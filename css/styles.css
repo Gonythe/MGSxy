@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    background-image: url(/images/s4o.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* ou contain selon ce que tu veux */
+    background-attachment: fixed; /* c’est la valeur par défaut */
+    background-position: top center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    background-color: red;
+    font-size: 35px;
+    text-decoration: underline;
+}
+
+.title_img{
+    width: 65px;
+}
+
+.liste {
+    display: flex;
+    justify-content: space-around;
+}
+
+.elmt {
+    background-color: blue;
+    font-size: 25px;
+}
+
+.elmt:hover {
+    background-color: rgb(226, 73, 167);
+    font-size: 125px;
+}
+
+.banderole {
+    margin-top: 50px;
+    width: 100px;
+    display: flex;
+}
+
+.raiden_title{
+    margin: 80px 60px 0px;
+    text-decoration: underline;
+    color: rgb(124, 224, 241);
+    font-size: 35px;
+}
+
+.description_raiden {
+    margin: 80px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.raiden_img {
+    width: 350px;
+}
+
+.description_txt_raiden {
+    background-color: rgba(0, 255, 115, 0.459);
+    font-size: 20px;
+    width: 375px;
+}
+
+.the_boss_title {
+    margin: 80px 60px 0px;
+    text-decoration: underline;
+    color: rgb(241, 96, 169);
+    font-size: 35px;
+}
+
+.description_the_boss {
+    margin: 80px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.description_txt_the_boss {
+    background-color: rgba(115, 0, 138, 0.459);
+    font-size: 20px;
+    width: 450px;
+}
+
+.big_boss_title {
+    margin: 80px 60px 0px;
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+    font-size: 35px;
+}
+
+.description_big_boss {
+    margin: 80px 60px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.description_txt_big_boss {
+    background-color: rgba(214, 4, 4, 0.562);
+    font-size: 20px;
+    width: 450px;
+}
