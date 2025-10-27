@@ -39,31 +39,60 @@
     </div>
 
     <div class="bande">
-        <button class="btn show-overlay">        
+
+        <button class="btn show-overlay-big-boss">        
             <img class="banderole" src="/images/big_boss.png" alt="">
         </button>
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <button class="btn show-overlay">        
+        <button class="btntb show-overlay-the-boss">
+            <img src="/images/the_boss.jpg" alt="" class="banderole">
+        </button>
+        <button class="btnr show-overlay-raiden">
+            <img src="/images/raiden.png" alt="" class="banderole">
+        </button>
+
+        <button class="btn show-overlay-big-boss">        
             <img class="banderole" src="/images/big_boss.png" alt="">
-        </button>        <img src="/images/raiden.png" alt="" class="banderole">
-        <img class="banderole" src="/images/big_boss.png" alt="">
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <button class="btn show-overlay">        
+        </button>   
+        <button class="btntb show-overlay-the-boss">
+            <img src="/images/the_boss.jpg" alt="" class="banderole">
+        </button>        
+        <button class="btnr show-overlay-raiden">
+            <img src="/images/raiden.png" alt="" class="banderole">
+        </button>
+
+        <button class="btn show-overlay-big-boss">        
             <img class="banderole" src="/images/big_boss.png" alt="">
         </button>
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <button class="btn show-overlay">        
+        <button class="btntb show-overlay-the-boss">
+            <img src="/images/the_boss.jpg" alt="" class="banderole">
+        </button>
+        <button class="btnr show-overlay-raiden">
+            <img src="/images/raiden.png" alt="" class="banderole">
+        </button>
+
+        <button class="btn show-overlay-big-boss">        
             <img class="banderole" src="/images/big_boss.png" alt="">
         </button>
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
-        <img src="/images/raiden.png" alt="" class="banderole">
-        <button class="btn show-overlay">        
+        <button class="btntb show-overlay-the-boss">
+            <img src="/images/the_boss.jpg" alt="" class="banderole">
+        </button>
+        <button class="btnr show-overlay-raiden">
+            <img src="/images/raiden.png" alt="" class="banderole">
+        </button>
+
+        <button class="btn show-overlay-big-boss">        
             <img class="banderole" src="/images/big_boss.png" alt="">
         </button>
-        <img src="/images/the_boss.jpg" alt="" class="banderole">
+        <button class="btntb show-overlay-the-boss">
+            <img src="/images/the_boss.jpg" alt="" class="banderole">
+        </button>
+        <button class="btnr show-overlay-raiden">
+            <img src="/images/raiden.png" alt="" class="banderole">
+        </button>
+
+        <button class="btn show-overlay-big-boss">        
+            <img class="banderole" src="/images/big_boss.png" alt="">
+        </button>
     </div>
 
     <section class="raiden" id="raiden">
@@ -108,28 +137,14 @@
         </p>
     </section>
 
-    <section class="big_boss_call">
-        <img id="overlay" class="overlay" src="/images/big_boss_call.png" alt="">
+    <section class="overlay">
+        <img id="overlay_big_boss" class="overlay_big_boss" src="/images/big_boss_call.png" alt="">
+        <img id="overlay_the_boss" src="/images/the_boss_overlay.jpg" alt="" class="overlay_the_boss">
+        <img id="overlay_raiden" src="/images/raiden_overlay.jpg" alt="" class="overlay_raiden">
     </section>
 
-    <script>
-        const buttons = document.querySelectorAll('.show-overlay');
-        const overlay = document.getElementById('overlay');
 
-        // Afficher / cacher avec les boutons
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-            overlay.classList.toggle('visible');
-            });
-        });
-
-        // Fermer avec Échap
-        document.addEventListener('keydown', (event) => {
-            if (event.key === 'Escape') {
-            overlay.classList.remove('visible');
-            }
-        });
-    </script>
+    <script src="/jss/script.js"> </script>
 
 
 </body>

@@ -7,7 +7,7 @@ body {
     background-position: top center;
 }
 
-#overlay {
+#overlay_big_boss {
   position: fixed;        /* reste fixe même au scroll */
   top: 0;
   left: 0;
@@ -20,7 +20,43 @@ body {
   transition: opacity 0.5s ease;
 }
 
-#overlay.visible {
+#overlay_the_boss {
+  position: fixed;        /* reste fixe même au scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;           /* prend toute la largeur de la fenêtre */
+  height: 100vh;          /* prend toute la hauteur */
+  object-fit: cover;      /* pour bien remplir sans déformer */
+  z-index: 9999;          /* au-dessus de tout */
+  pointer-events: none; /* empêche de bloquer les clics quand caché */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#overlay_raiden {
+  position: fixed;        /* reste fixe même au scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;           /* prend toute la largeur de la fenêtre */
+  height: 100vh;          /* prend toute la hauteur */
+  object-fit: cover;      /* pour bien remplir sans déformer */
+  z-index: 9999;          /* au-dessus de tout */
+  pointer-events: none; /* empêche de bloquer les clics quand caché */
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+#overlay_big_boss.visible {
+  opacity: 1;
+  pointer-events: all; /* permet d’interagir si tu veux */
+}
+
+#overlay_the_boss.visible {
+  opacity: 1;
+  pointer-events: all; /* permet d’interagir si tu veux */
+}
+
+#overlay_raiden.visible {
   opacity: 1;
   pointer-events: all; /* permet d’interagir si tu veux */
 }
@@ -38,10 +74,13 @@ body {
 
 .title_img{
     width: 65px;
+    position: relative;
+    transition: transform 0.3s ease; /* pour que le zoom soit fluide */
 }
 
 .header img:hover {
-    width: 130px;
+    transform: scale(1.3); /* l’image survolée grossit */
+    z-index: 10; /* pour qu’elle passe au-dessus des autres */
 }
 
 .liste {
@@ -82,6 +121,16 @@ body {
 }
 
 .btn {
+    background-color: rgb(245, 222, 179,0);
+    border: 0;
+}
+
+.btntb{
+    background-color: rgb(245, 222, 179,0);
+    border: 0;
+}
+
+.btnr{
     background-color: rgb(245, 222, 179,0);
     border: 0;
 }
