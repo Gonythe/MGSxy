@@ -9,5 +9,6 @@ button.addEventListener("click", () => {
   marie.classList.toggle("invisible");
 
   audio.muted = false;
-  audio.play();
+  audio.play().catch(err => console.log(err));;
 });
+
