@@ -1,11 +1,19 @@
+@font-face {
+  font-family: "Metal Gear";
+  src: url("/font/METAG___.TTF");
+}
+
 body {
+    font-family: "Metal Gear", serif;
     margin: 0;
     background-image: url(/images/s4o.png);
     background-repeat: no-repeat;
     background-size: cover; /* ou contain selon ce que tu veux */
     background-attachment: fixed; /* c’est la valeur par défaut */
     background-position: top center;
+    cursor: url("/images/curseur_mgs.png"),pointer;
 }
+
 
 #overlay_big_boss {
   position: fixed;        /* reste fixe même au scroll */
