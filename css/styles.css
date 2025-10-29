@@ -11,7 +11,7 @@ body {
     background-size: cover; /* ou contain selon ce que tu veux */
     background-attachment: fixed; /* c’est la valeur par défaut */
     background-position: top center;
-    cursor: url("/images/curseur_mgs.png"),pointer;
+    cursor: url("/images/curseur_mgs.png"), pointer;
 }
 
 
@@ -203,4 +203,13 @@ body {
     background-color: rgba(214, 4, 4, 0.562);
     font-size: 20px;
     width: 450px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mystere {
+    width: 35px;
 }
